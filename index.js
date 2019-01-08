@@ -21,7 +21,7 @@ function currentLine(currentLineOfPeople) {
     return `The line is currently empty.`;   
   }
   
-  var new_array = [];
+  var currentTickets = [];
   for( var i = 0; i < currentLineOfPeople.length; i++ ) {
     new_array.push(`${i+1}. ${currentLineOfPeople[i]}`);  
   }
