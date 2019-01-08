@@ -13,7 +13,7 @@ function nowServing(currentLineOfPeople) {
     return `There is nobody waiting to be served!`;
   }
   
-  return `Currently serving ${ticketNumber}.`;
+  return `Currently serving ${currentLineOfPeople.shift()}.`;
 }
 
 function currentLine(currentLineOfPeople) {
