@@ -1,7 +1,7 @@
-function takeANumber(currentLineOfPeople, ticket_number) {
-  currentLineOfPeople.push(person_name);
+function takeANumber(currentLineOfPeople) {
+  currentLineOfPeople.push(currentLineOfPeople.length);
   
-  return `Welcome, ${person_name}. You are number ${currentLineOfPeople.length} in line.`;  
+  return `${currentLineOfPeople.length}`;  
 }
 
 function nowServing(currentLineOfPeople) {
