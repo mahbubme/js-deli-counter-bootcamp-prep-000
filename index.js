@@ -23,8 +23,8 @@ function currentLine(currentLineOfPeople) {
   
   var currentTickets = [];
   for( var i = 0; i < currentLineOfPeople.length; i++ ) {
-    new_array.push(`${i+1}. ${currentLineOfPeople[i]}`);  
+    currentTickets.push(`${currentLineOfPeople[i]}`);  
   }
   
-  return `The line is currently: ${new_array.join(', ')}`;
+  return `The line is currently: ${currentTickets.join(', ')}`;
 }
