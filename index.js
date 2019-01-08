@@ -1,7 +1,11 @@
+var ticketNumber = 0;
+
 function takeANumber(currentLineOfPeople) {
-  currentLineOfPeople.push(currentLineOfPeople.length);
+  ticketNumber += 1;
   
-  return `${currentLineOfPeople.length}`;  
+  currentLineOfPeople.push(ticketNumber);
+  
+  return ticketNumber;  
 }
 
 function nowServing(currentLineOfPeople) {
