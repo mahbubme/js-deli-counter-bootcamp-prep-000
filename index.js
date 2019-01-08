@@ -21,10 +21,5 @@ function currentLine(currentLineOfPeople) {
     return `The line is currently empty.`;   
   }
   
-  var currentTickets = [];
-  for( var i = 0; i < currentLineOfPeople.length; i++ ) {
-    currentTickets.push(`${currentLineOfPeople[i]}`);  
-  }
-  
-  return `The line is currently: ${currentTickets.join(', ')}`;
+  return `The line is currently: ${currentLineOfPeople.join(', ')}`;
 }
